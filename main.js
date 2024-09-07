@@ -20,11 +20,15 @@ function changeTurn(){
     if(turn === "X"){
         turn = "O";
         document.querySelector(".bg").style.left = "60px";
+        document.querySelector(".bg").style.backgroundColor="#39FF14"
+     document.documentElement.style.setProperty('--hover-color', '#39FF14');
 
     }
     else{
         turn = "X"
         document.querySelector(".bg").style.left = "0px";
+        document.querySelector(".bg").style.backgroundColor="red"
+        document.documentElement.style.setProperty('--hover-color', 'red');
     }
 }
 function checkWin(){

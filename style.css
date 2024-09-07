@@ -6,6 +6,14 @@
     transition: 0.2s ease-in-out;
     color: white;
 }
+:root {
+    --hover-color: red;
+}
+
+.box:hover {
+    background-color: var(--hover-color);
+    border-radius: 10px;
+}
 .heading{
     font-weight: 700;
     font-size: 30px;
@@ -61,7 +69,7 @@ body{
     left: 0;
     width: 60px;
     height: 40px;
-    background-color: #39FF14;
+    background-color: red;
     border-radius: 4px;
     z-index: -1;
 }
@@ -73,7 +81,7 @@ body{
     height: 250px;
     width: 250px;
     margin: 65px auto;
-    border: 4px solid #000000;
+    border: 6px solid #000000;
     border-radius: 10px;
 }
 
@@ -82,13 +90,14 @@ body{
     font-size: 2rem;
     font-weight: 700;
     border: 2px solid #000000;
-    border-radius: 4px;
+    border-radius: 1px;
 
 }
 
 .box:hover{
-    border-radius: 4px;
-    background-color: #39FF14;
+    border-radius: 10px;
+    background-color: red
+    ;
 }
 
 #play-again{
